@@ -1,11 +1,5 @@
-* Link videos:
-https://bit.ly/web1-project-videos
-
-* Link resource:
-https://bit.ly/web1-project-resource
-
-* Link prototype:
-https://bit.ly/web1-project-prototype
+https://web1-22880267.vercel.app/
+<p>Da hoan thanh videos 1-17</p>
 
 * Link API
 https://web1-api.vercel.app/
