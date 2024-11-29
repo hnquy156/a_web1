@@ -1,0 +1,58 @@
+:root {
+  --pink: #e38773;
+  --black: #252525;
+}
+
+.bg-pink {
+  background-color: var(--pink) !important;
+}
+
+.bg-black {
+  background-color: var(--black);
+}
+
+#Cau1 {
+  background: url('./images/le-bg.png') top left no-repeat;
+  min-height: 600px;
+  background-size: cover;
+  background-position: center;
+}
+
+#coffee-1 {
+  background: url('./images/cau1-img.png') top right no-repeat;
+}
+
+.btn-cau2 {
+  border: 1px solid var(--pink);
+  color: var(--pink);
+  border-radius: 0.51rem;
+  background-color: white;
+  padding: 0.6rem;
+  font-weight: bold;
+}
+
+.h-600 {
+  min-height: 600px;
+}
+
+#cau3-img {
+  width: 680px;
+  height: 420px;
+}
+
+#form {
+  top: 50%;
+  right: 0;
+  border-radius: 5px;
+  padding: 1.5rem;
+  background-color: white;
+  transform: translateY(-50%);
+}
+
+#form label {
+  margin-bottom: 2px;
+}
+
+.border-orange {
+  border: 1px solid var(--pink) !important;
+}

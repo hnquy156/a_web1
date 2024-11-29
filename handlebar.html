@@ -1,0 +1,38 @@
+<script id="template-cau2" type="text/x-handlebars-template">
+  {{#each data}}
+    <div class='col-lg-3 col-md-6 col-sm-12 text-center mb-4'>
+      <img src='{{imagePath}}' class='img-fluid' alt='{{title}}' />
+      <h3 class='fw-bold text-uppercase mt-3'>{{title}}</h3>
+      <p>
+        {{summary}}
+      </p>
+      <button class='btn-cau2' onclick="handleReadmore('{{id}}')">Read more</button>
+    </div>
+  {{/each}}
+</script>
+
+<script src="./vendor/handlebars/handlebars-v4.7.7.js"></script>
+<script src="./vendor/data.js"></script>
+<script>
+  const loadData = (data, templateId, viewId) => {
+    const source = document.getElementById(templateId).innerHTML;
+    const template = Handlebars.compile(source);
+    const context = { data };
+    const html = template(context);
+    document.getElementById(viewId).innerHTML = html;
+  };
+
+  const dataCau2 = getAll();
+  loadData(dataCau2, 'template-cau2', 'Cau2');
+
+  const handleReadmore = (id) => {
+    const data = getOne(id);
+    loadData(data, 'template-cau2-modal', 'Cau2Modal');
+    document.getElementById('buttonCau2Modal')?.click();
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    alert('Please come back later!');
+  };
+</script>
